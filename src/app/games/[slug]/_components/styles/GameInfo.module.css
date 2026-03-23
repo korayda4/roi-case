@@ -1,0 +1,68 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.statsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.stat:last-child {
+  border-bottom: none;
+}
+
+.stat:nth-child(even) {
+  background-color: var(--color-surface);
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.statLabel {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.statValue {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  text-align: right;
+}
+
+.playBtn {
+  margin-top: var(--space-1);
+}
+
+.playBtn:hover {
+  transform: translateY(-2px);
+}

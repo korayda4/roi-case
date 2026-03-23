@@ -22,6 +22,26 @@ export default function AgeVerification({ status, onVerify, onDeny, onReset }: A
     if (match?.[1] === 'tr') setLang('tr');
   }, []);
 
+  useEffect(() => {
+    if (status === 'verified') return;
+
+    const html = document.documentElement;
+    const body = document.body;
+    const prevHtmlOverflow = html.style.overflow;
+    const prevBodyOverflow = body.style.overflow;
+    const prevBodyTouchAction = body.style.touchAction;
+
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+    body.style.touchAction = 'none';
+
+    return () => {
+      html.style.overflow = prevHtmlOverflow;
+      body.style.overflow = prevBodyOverflow;
+      body.style.touchAction = prevBodyTouchAction;
+    };
+  }, [status]);
+
   const switchLang = (next: Lang) => {
     document.cookie = `lang=${next};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
     setLang(next);
@@ -108,7 +128,8 @@ export default function AgeVerification({ status, onVerify, onDeny, onReset }: A
 
         <p className={styles.legal}>
           {av.legalPrefix}{' '}
-          <AppLink href="/terms">{av.termsLink}</AppLink>.
+          <AppLink href="/terms">{av.termsLink}</AppLink>
+          {av.legalSuffix}
         </p>
       </div>
     </div>

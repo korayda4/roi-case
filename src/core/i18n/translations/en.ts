@@ -15,6 +15,7 @@ export const en = {
             deny: 'I am under 18 — Exit',
             legalPrefix: 'By entering, you confirm you meet the minimum age requirement and accept our',
             termsLink: 'Terms of Service',
+            legalSuffix: '.',
             deniedTitle: 'Access Restricted',
             deniedDescription: 'This platform is available to users aged 18 and above only. You must confirm your age to continue.',
             goBack: 'Go back'

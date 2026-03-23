@@ -13,8 +13,9 @@ export const tr = {
             description: "Koray, yetişkinlere yönelik bir eğlence platformudur. Bu siteye erişmek için en az 18 yaşında olmalısınız.",
             confirm: '18 yaşında veya üzerindeyim — Giriş',
             deny: '18 yaşından küçüğüm — Çıkış',
-            legalPrefix: 'Girerek, minimum yaş gereksinimini karşıladığınızı ve',
-            termsLink: "Hizmet Şartları'nı",
+            legalPrefix: 'Girerek, minimum yaş şartını karşıladığınızı ve',
+            termsLink: 'Hizmet Şartları',
+            legalSuffix: "'nı kabul ettiğinizi onaylarsınız.",
             deniedTitle: 'Erişim Kısıtlandı',
             deniedDescription: 'Bu platform yalnızca 18 yaş ve üzeri kullanıcılar için mevcuttur. Devam etmek için yaşınızı doğrulamalısınız.',
             goBack: 'Geri Dön'

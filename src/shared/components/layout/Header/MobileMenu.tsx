@@ -66,7 +66,9 @@ export default function MobileMenu({ lang, navT }: MobileMenuProps) {
         </ul>
 
         <div className={styles.drawerBottom}>
-          <LanguageSwitcher current={lang} />
+          <div className={styles.drawerLangRow}>
+            <LanguageSwitcher current={lang} />
+          </div>
           <Link href="/games" className={styles.drawerCtaBtn} onClick={() => setIsOpen(false)}>
             {navT.playNow}
           </Link>

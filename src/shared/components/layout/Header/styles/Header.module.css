@@ -167,6 +167,12 @@
   gap: var(--space-3);
 }
 
+.drawerLangRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .drawerCtaBtn {
   display: flex;
   align-items: center;

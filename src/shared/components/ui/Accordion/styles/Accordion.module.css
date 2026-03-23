@@ -54,22 +54,28 @@
 }
 
 .answer {
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
-  transition: max-height var(--transition-slow), opacity var(--transition-slow);
+  transition: grid-template-rows var(--transition-slow), opacity var(--transition-slow);
   opacity: 0;
 }
 
 .answerOpen {
-  max-height: 400px;
+  grid-template-rows: 1fr;
   opacity: 1;
 }
 
 .answerText {
-  padding: 0 var(--space-6) var(--space-5);
+  overflow: hidden;
+  padding: 0;
   font-size: var(--text-sm);
   color: var(--color-muted);
   line-height: var(--leading-relaxed);
+  border-top: none;
+}
+
+.answerOpen .answerText {
+  padding: var(--space-4) var(--space-6) var(--space-5);
   border-top: 1px solid var(--color-border);
-  padding-top: var(--space-4);
 }

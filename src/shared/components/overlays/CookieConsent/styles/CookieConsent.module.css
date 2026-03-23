@@ -1,0 +1,127 @@
+.banner {
+  position: fixed;
+  bottom: var(--space-4);
+  left: var(--space-4);
+  right: var(--space-4);
+  z-index: var(--z-toast);
+  animation: slideUp 300ms ease;
+}
+
+.inner {
+  max-width: 860px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--shadow-xl);
+}
+
+.icon {
+  flex-shrink: 0;
+  display: flex;
+  color: var(--color-accent);
+}
+
+.text {
+  flex: 1;
+  font-size: var(--text-sm);
+  color: var(--color-secondary);
+  line-height: var(--leading-normal);
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.btnAccept {
+  height: 36px;
+  padding: 0 1rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color var(--transition-base);
+  white-space: nowrap;
+}
+
+.btnAccept:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btnReject {
+  height: 36px;
+  padding: 0 1rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-muted);
+  background-color: transparent;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color var(--transition-base), color var(--transition-base);
+  white-space: nowrap;
+}
+
+.btnReject:hover {
+  border-color: var(--color-border-strong);
+  color: var(--color-secondary);
+}
+
+.close {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--color-subtle);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-base), background-color var(--transition-base);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.close:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-surface);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .close {
+    display: none;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}

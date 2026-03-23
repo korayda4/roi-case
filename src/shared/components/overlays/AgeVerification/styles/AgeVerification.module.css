@@ -152,7 +152,7 @@
   font-size: var(--text-base);
   font-weight: 600;
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-hover);
   border-radius: var(--radius-md);
   border: none;
   cursor: pointer;
@@ -161,7 +161,7 @@
 }
 
 .btnPrimary:hover {
-  background-color: var(--color-accent-hover);
+  background-color: var(--color-accent-strong);
   box-shadow: var(--shadow-accent);
 }
 

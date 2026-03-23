@@ -45,14 +45,14 @@
 
 /* Variants */
 .primary {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-hover);
   color: var(--color-white);
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-hover);
 }
 
 .primary:hover {
-  background-color: var(--color-accent-hover);
-  border-color: var(--color-accent-hover);
+  background-color: var(--color-accent-strong);
+  border-color: var(--color-accent-strong);
   box-shadow: var(--shadow-accent);
 }
 

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Play, Star, Users, GameController, JoystickIcon, PuzzlePieceIcon, CardsIcon, CrownIcon } from '@phosphor-icons/react/dist/ssr';
 import Container from '@/shared/components/ui/Container/Container';
 import type { Translations } from '@/core/i18n/translations';
+import { HERO_CATEGORY_GRADIENTS } from '@/shared/constants/color';
 import styles from './styles/HeroSection.module.css';
 
 interface HeroSectionProps {
@@ -9,10 +10,10 @@ interface HeroSectionProps {
 }
 
 const categoryConfig = [
-  { Icon: JoystickIcon,    gradient: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)', count: '1,840', key: 'arcade'   as const },
-  { Icon: PuzzlePieceIcon, gradient: 'linear-gradient(135deg, #1e0a3c 0%, #7c3aed 100%)', count: '1,120', key: 'puzzle'   as const },
-  { Icon: CardsIcon,       gradient: 'linear-gradient(135deg, #2a0a1a 0%, #db2777 100%)', count: '763',   key: 'card'     as const },
-  { Icon: CrownIcon,       gradient: 'linear-gradient(135deg, #052010 0%, #16a34a 100%)', count: '512',   key: 'strategy' as const },
+  { Icon: JoystickIcon,    gradient: HERO_CATEGORY_GRADIENTS.arcade,   count: '1,840', key: 'arcade'   as const },
+  { Icon: PuzzlePieceIcon, gradient: HERO_CATEGORY_GRADIENTS.puzzle,   count: '1,120', key: 'puzzle'   as const },
+  { Icon: CardsIcon,       gradient: HERO_CATEGORY_GRADIENTS.card,     count: '763',   key: 'card'     as const },
+  { Icon: CrownIcon,       gradient: HERO_CATEGORY_GRADIENTS.strategy, count: '512',   key: 'strategy' as const },
 ];
 
 export default function HeroSection({ t }: HeroSectionProps) {

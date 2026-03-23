@@ -1,6 +1,8 @@
 .section {
   padding-block: var(--section-py);
   background-color: var(--color-white);
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 760px;
 }
 
 .list {

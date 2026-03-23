@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import AgeVerification from '@/shared/components/overlays/AgeVerification/AgeVerification';
 import CookieConsent from '@/shared/components/overlays/CookieConsent/CookieConsent';
+import ScrollToTop from '@/shared/components/ui/ScrollToTop/ScrollToTop';
 
 type AgeStatus = 'loading' | 'pending' | 'verified' | 'denied';
 
@@ -56,6 +57,7 @@ export default function ClientProviders() {
       {ageStatus === 'verified' && !cookieAnswered && (
         <CookieConsent onAnswer={handleCookieAnswer} />
       )}
+      <ScrollToTop />
     </>
   );
 }

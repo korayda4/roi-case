@@ -41,7 +41,7 @@
 
 .tagline {
   font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.72);
   line-height: var(--leading-relaxed);
   max-width: 280px;
 }
@@ -59,7 +59,7 @@
   height: 36px;
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.8);
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
@@ -73,7 +73,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.72);
   margin-bottom: var(--space-4);
 }
 
@@ -85,7 +85,7 @@
 
 .link {
   font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.8);
   transition: color var(--transition-base);
 }
 
@@ -102,14 +102,14 @@
 
 .disclaimer {
   font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.7);
   line-height: var(--leading-relaxed);
   max-width: 700px;
 }
 
 .copyright {
   font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.68);
 }
 
 @media (max-width: 900px) {

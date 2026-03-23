@@ -77,14 +77,14 @@
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-hover);
   border-radius: var(--radius-md);
   transition: background-color var(--transition-base), box-shadow var(--transition-base);
   white-space: nowrap;
 }
 
 .ctaBtn:hover {
-  background-color: var(--color-accent-hover);
+  background-color: var(--color-accent-strong);
   box-shadow: var(--shadow-accent);
 }
 
@@ -182,13 +182,13 @@
   font-size: var(--text-base);
   font-weight: 600;
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-hover);
   border-radius: var(--radius-md);
   transition: background-color var(--transition-base);
 }
 
 .drawerCtaBtn:hover {
-  background-color: var(--color-accent-hover);
+  background-color: var(--color-accent-strong);
 }
 
 @media (max-width: 960px) {

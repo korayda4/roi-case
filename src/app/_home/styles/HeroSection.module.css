@@ -72,13 +72,13 @@
   font-size: var(--text-base);
   font-weight: 700;
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-hover);
   border-radius: var(--radius-lg);
   transition: background-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-fast);
 }
 
 .btnPrimary:hover {
-  background-color: var(--color-accent-hover);
+  background-color: var(--color-accent-strong);
   box-shadow: var(--shadow-accent);
   transform: translateY(-1px);
 }

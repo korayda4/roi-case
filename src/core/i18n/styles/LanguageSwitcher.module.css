@@ -1,0 +1,66 @@
+.switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 3px;
+}
+
+.compact {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  height: 28px;
+  padding: 0 0.625rem;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  border-radius: var(--radius-full);
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color var(--transition-base), color var(--transition-base);
+  font-family: inherit;
+}
+
+.btn:hover:not(.active) {
+  color: var(--color-primary);
+  background-color: var(--color-border);
+}
+
+.active {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  box-shadow: var(--shadow-xs);
+}
+
+.compact .btn {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.compact .btn:hover:not(.active) {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.compact .active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+.divider {
+  width: 1px;
+  height: 14px;
+  background-color: var(--color-border);
+  flex-shrink: 0;
+}
+
+.compact .divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
